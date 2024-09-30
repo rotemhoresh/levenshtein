@@ -25,4 +25,14 @@ var tests = []struct {
 		B: "Saturday",
 		D: 3,
 	},
+	{
+		A: "abc",
+		B: "abc",
+		D: 0,
+	},
+	{
+		A: "a very long string to test the performance",
+		B: "a very long string to test the benchmark performance",
+		D: 10,
+	},
 }

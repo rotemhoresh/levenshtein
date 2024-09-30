@@ -3,8 +3,10 @@ package levenshtein
 // RecursiveDistance calculates the edit distance between two strings using the
 // Levenshtein Distance algorithm.
 //
-// It implements the original, recursive algorithm, which is not efficient, thus
+// It implements the original, [recursive] algorithm, which is not efficient, thus
 // should not be used. It was created for learning purposes.
+//
+// [recursive]: https://en.wikipedia.org/wiki/Levenshtein_distance#Recursive
 func RecursiveDistance(a, b string) int {
 	la, lb := len(a), len(b)
 	if lb == 0 {
